@@ -1,0 +1,81 @@
+# ==============================================================================
+# 国立国会図書館件名標目表（NDLSH）データおよび生成 SQLite データベース
+# ==============================================================================
+# TSV / ZIP 形式のダウンロードデータ
+*.tsv
+*.tsv.zip
+ndlsh-tsv*
+ndlsh20*
+
+# SQLite データベースファイル
+*.db
+*.sqlite
+*.sqlite3
+ndlsh.db
+src/marc_ndlsh/data/*.db
+lib/MARC/NDLSH/data/*.db
+
+# プレースホルダは保持
+!**/data/.gitkeep
+!**/data/.exsist
+
+# ==============================================================================
+# Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing / Type checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ==============================================================================
+# Perl (既存ファイル・ビルド成果物)
+# ==============================================================================
+Makefile
+Makefile.old
+blib/
+pm_to_blib
+*.tmp
+*.bak
+pod2htmd.tmp
+pod2htmi.tmp
+
+# ==============================================================================
+# OS / Editors
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

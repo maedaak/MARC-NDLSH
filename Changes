@@ -1,0 +1,11 @@
+Revision history for Perl extension MARC::NDLSH.
+
+0.01  Wed Jul  1 12:32:22 2009
+	- original version; created by h2xs 1.23 with options
+		-AX -n MARC::NDLSH
+0.02  Wed Jul  1 12:32:22 2009
+        パッケージ化の際に一部ファイルが含まれない不具合を修正
+0.03  Wed Aug  6 21:27:00 2009
+       関数型の簡潔なインターフェイス"MARC::NDLSH::Simple"を追加 
+0.04  Wed Aug  7 21:1l:40 2009
+       バグ修正 

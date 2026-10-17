@@ -1,0 +1,30 @@
+MARC-NDLSH (Python 3版)
+========================
+
+国立国会図書館件名標目表（NDLSH）にアクセスするための Python 3 ライブラリです。
+詳細は README.md をご参照ください。
+
+データの出典について
+--------------------
+本パッケージで利用する国立国会図書館件名標目表（NDLSH）データは、
+国立国会図書館「Web NDL Authorities」
+（https://id.ndl.go.jp/information/download/#anchor01）
+にて配布されている最新の「TAB区切りテキスト形式データ」から取得したものです。
+
+Web NDL Authorities 利用条件:
+https://id.ndl.go.jp/information/use/
+
+クイックスタート
+----------------
+1. インストール
+   pip install -e .
+
+2. データベースの作成
+   python scripts/make_ndlshdb.py --download
+
+3. テスト実行
+   python -m unittest discover -s tests
+
+COPYRIGHT AND LICENCE
+---------------------
+Copyright (C) 2009-2026 by Akira Maeda

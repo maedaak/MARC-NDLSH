@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marc-ndlsh"
+version = "0.1.0"
+description = "国立国会図書館件名標目表（NDLSH）にアクセスするための Python 3 ライブラリ"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Perl Artistic License or GPL / MIT Compatible" }
+authors = [
+    { name = "Akira Maeda", email = "maeda@lib.u-tokyo.ac.jp" }
+]
+keywords = ["NDLSH", "MARC", "library", "authorities", "thesaurus"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: General",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.scripts]
+make-ndlshdb = "scripts.make_ndlshdb:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["marc_ndlsh*"]
+
+[tool.setuptools.package-data]
+marc_ndlsh = ["data/.gitkeep"]
